@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres.jbgzbacwbxuosrhlawpb",
+    "password": "Czapms*262ZXgNK",
+    "database": "postgres",
+    "host": "aws-0-eu-central-1.pooler.supabase.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres.jbgzbacwbxuosrhlawpb",
+    "password": "Czapms*262ZXgNK",
+    "database": "postgres",
+    "host": "aws-0-eu-central-1.pooler.supabase.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres.jbgzbacwbxuosrhlawpb",
+    "password": "Czapms*262ZXgNK",
+    "database": "postgres",
+    "host": "aws-0-eu-central-1.pooler.supabase.com",
+    "dialect": "postgres"
+  }
+}
