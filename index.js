@@ -1,7 +1,11 @@
 const express = require("express");
 const dotenv = require('dotenv');
 const cors = require('cors');
+
+const { sendWelcomeMail } = require("./services/mailer");
+
 const verificationMiddleware = require("./middlewares/verification");
+
 const usersRouter = require("./routes/usersRouter");
 const mathRouter = require("./routes/mathRouter");
 const caseRouter = require("./routes/caseRouter");
@@ -35,5 +39,6 @@ db.sequelize.sync().then(() => {
   console.log("Database Connected");
   app.listen(PORT, () => {
     console.log(`Server running ${PORT}`);
+    sendWelcomeMail('asongrandy9@gmail.com')
   });
 });
